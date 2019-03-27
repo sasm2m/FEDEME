@@ -1,0 +1,28 @@
+<table>
+  <thead>
+    <th>vista participante</th>
+
+  </thead>
+  <tbody>
+    <tr *ngFor="let participante of participantes">
+
+      <td>{{participante.parHeat}}</td>
+      <td>{{participante.parStand}}</td>
+      <td></td>
+      <td>{{participante.parApe}} {{participante.parNom}}</td>
+      <td>{{participante.parTeam}}</td>
+      <td>Men</td>
+      <td>{{participante.parDrawGroup}}</td>
+      <td>{{participante.parStartingTime}}</td>
+      <td>{{participante.parTotalPrecision}}</td>
+      <td>{{participante.parDistancia}}</td>
+      <td>{{participante.parThrowingPoint}}</td>
+      <td>{{participante.parPenalty}}</td>
+      <td>{{participante.parPentathonPoint}}</td>
+      <td>DT Finish</td>
+      <td>
+          <button (click)="delete(policy.id)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
